@@ -1,7 +1,6 @@
 .Footer {
-  height: 350px;
+  height: 90px;
   background: #4c8ef0;
-  height: 350px;
 }
 
 .newsletter {
@@ -73,14 +72,27 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .Footer {
     width: 100%;
-    padding: 20px 10px 0 10px;
+    height: 300px;
   }
+
   .newsletter {
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
   }
 
   .Footer .logo {
     font-size: 50px;
+    padding-left: 30px;
+  }
+
+  .newsletter-text h2 {
+    font-size: 25px;
+  }
+
+  .newsletter-text p {
+    font-size: 16px;
   }
 
   .newsletter-text input {
@@ -90,42 +102,6 @@
 
   .links {
     font-size: 18px;
-    padding-top: 30px;
-  }
-
-  .links .socials {
-    gap: 20px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .Footer {
-    width: 100%;
-  }
-  .newsletter {
-    padding: 20px 5;
-  }
-
-  .Footer .logo {
-    font-size: 45px;
-    left: 5px;
-  }
-
-  .newsletter-text h2 {
-    font-size: 25px;
-  }
-
-  .newsletter-text p {
-    font-size: 13px;
-  }
-
-  .newsletter-text input {
-    width: 300px;
-    padding: 5px;
-  }
-
-  .links {
-    font-size: 16px;
     padding-top: 30px;
   }
 
@@ -139,12 +115,59 @@
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .Footer {
+    width: 100%;
+    height: 250px;
+  }
+
+  .newsletter {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 15px;
+  }
+
+  .Footer .logo {
+    font-size: 30px;
+    padding-left: 30px;
+  }
+
+  .newsletter-text h2 {
+    font-size: 22px;
+  }
+
+  .newsletter-text p {
+    font-size: 14px;
+  }
+
+  .newsletter-text input {
+    width: 350px;
+    padding: 3px;
+  }
+
+  .links {
+    font-size: 16px;
+    padding-top: 30px;
+  }
+
+  .links img {
+    height: 23px;
+    width: 23px;
+  }
+
+  .links .socials {
+    gap: 15px;
+  }
+}
+
 @media (max-width: 480px) {
   .Footer {
     width: 100%;
   }
+
   .newsletter {
-    padding: 20px 5px;
+    display: none;
   }
 
   .Footer .logo {
@@ -153,16 +176,16 @@
   }
 
   .newsletter-text h2 {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .newsletter-text p {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .newsletter-text input {
     width: 200px;
-    padding: 5px;
+    padding: 3px;
   }
 
   .links {
