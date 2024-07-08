@@ -1,0 +1,181 @@
+.Footer {
+  height: 350px;
+  background: #4c8ef0;
+  height: 350px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  border-bottom: 1px solid #fff;
+}
+
+.Footer .logo {
+  font-size: 64px;
+  color: #fff;
+}
+
+.newsletter-text {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+
+.newsletter-text h2 {
+  font-weight: 700;
+  color: #fff;
+}
+
+.newsletter-text p {
+  color: #fff;
+  padding-top: 10px;
+}
+
+.newsletter-text input {
+  font-size: 20px;
+  width: 400px;
+  padding: 5px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  outline: #4c8ef0;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  padding-top: 50px;
+}
+
+.links img {
+  height: 30px;
+  width: 30px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links .socials {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Footer {
+    width: 100%;
+    padding: 20px 10px 0 10px;
+  }
+  .newsletter {
+    padding: 10px;
+  }
+
+  .Footer .logo {
+    font-size: 50px;
+  }
+
+  .newsletter-text input {
+    width: 400px;
+    padding: 5px;
+  }
+
+  .links {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+
+  .links .socials {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .Footer {
+    width: 100%;
+  }
+  .newsletter {
+    padding: 20px 5;
+  }
+
+  .Footer .logo {
+    font-size: 45px;
+    left: 5px;
+  }
+
+  .newsletter-text h2 {
+    font-size: 25px;
+  }
+
+  .newsletter-text p {
+    font-size: 13px;
+  }
+
+  .newsletter-text input {
+    width: 300px;
+    padding: 5px;
+  }
+
+  .links {
+    font-size: 16px;
+    padding-top: 30px;
+  }
+
+  .links img {
+    height: 23px;
+    width: 23px;
+  }
+
+  .links .socials {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Footer {
+    width: 100%;
+  }
+  .newsletter {
+    padding: 20px 5px;
+  }
+
+  .Footer .logo {
+    font-size: 30px;
+    left: 5px;
+  }
+
+  .newsletter-text h2 {
+    font-size: 23px;
+  }
+
+  .newsletter-text p {
+    font-size: 13px;
+  }
+
+  .newsletter-text input {
+    width: 200px;
+    padding: 5px;
+  }
+
+  .links {
+    font-size: 12px;
+    padding-top: 30px;
+  }
+
+  .links img {
+    height: 23px;
+    width: 23px;
+  }
+
+  .links .socials {
+    gap: 10px;
+  }
+}

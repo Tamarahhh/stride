@@ -1,0 +1,275 @@
+.PaymentPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 280px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.PaymentPage h2 {
+  color: #272727;
+  position: relative;
+  left: -550px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.PaymentPage h3 {
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+  color: #272727;
+}
+
+.PaymentPage p {
+  font-size: 15px;
+  color: #272727;
+}
+
+.card-payment-form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.card-payment-form label {
+  margin-bottom: 15px;
+}
+
+.card-payment-form input {
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #8f8f8f;
+  border-radius: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.card-payment-form .checkbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.card-payment-form #checkbox {
+  height: 17px;
+  width: 17px;
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+
+.card-payment-form button {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  background: #0c4395;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-payment-form button:hover {
+  background: #fff;
+  color: #0c4395;
+  border: 1px solid #0c4395;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .PaymentPage {
+    padding: 60px 80px;
+  }
+
+  .PaymentPage h2 {
+    position: relative;
+    left: -250px;
+    font-size: 45px;
+  }
+
+  .PaymentPage p {
+    font-size: 14px;
+    color: #272727;
+  }
+
+  .card-payment-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-payment-form label {
+    margin-bottom: 15px;
+  }
+
+  .card-payment-form input {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #8f8f8f;
+    border-radius: 20px;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .card-payment-form .checkbox {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 5px;
+    top: 2px;
+  }
+
+  .card-payment-form #checkbox {
+    height: 17px;
+    width: 17px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+  }
+
+  .card-payment-form button {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .PaymentPage {
+    padding: 30px 100px;
+  }
+
+  .PaymentPage h2 {
+    position: relative;
+    left: -200px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .PaymentPage h3 {
+    font-size: 17px;
+  }
+
+  .PaymentPage p {
+    font-size: 14px;
+    color: #272727;
+  }
+
+  .card-payment-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .card-payment-form label {
+    margin-bottom: 15px;
+  }
+
+  .card-payment-form input {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #8f8f8f;
+    border-radius: 20px;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .card-payment-form .checkbox {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 5px;
+    top: 2px;
+  }
+
+  .card-payment-form #checkbox {
+    height: 17px;
+    width: 17px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+  }
+
+  .card-payment-form button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .PaymentPage {
+    padding: 30px 100px;
+  }
+
+  .PaymentPage h2 {
+    position: relative;
+    left: -90px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .PaymentPage h3 {
+    font-size: 17px;
+  }
+
+  .PaymentPage p {
+    font-size: 14px;
+    color: #272727;
+  }
+
+  .card-payment-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .card-payment-form label {
+    margin-bottom: 15px;
+  }
+
+  .card-payment-form input {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #8f8f8f;
+    border-radius: 20px;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .card-payment-form .checkbox {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 5px;
+    top: 2px;
+  }
+
+  .card-payment-form #checkbox {
+    height: 17px;
+    width: 17px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+  }
+
+  .card-payment-form button {
+    padding: 10px;
+  }
+}

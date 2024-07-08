@@ -1,0 +1,94 @@
+.Hero {
+  background-image: url(../Images/herosec.png);
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+}
+
+.Hero h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 70px;
+  padding-top: 130px;
+}
+
+.Hero button {
+  background: #0c4395;
+  padding: 5px 55px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  border: #0c4395;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 60px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Hero button:hover {
+  background: #fff;
+  color: #0c4395;
+  border: 1px solid #4c8ef0;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Hero {
+    max-width: 1024px;
+    height: 600px;
+  }
+
+  .Hero h1 {
+    font-size: 84px;
+    padding-top: 90px;
+  }
+
+  .Hero button {
+    padding: 15px 70px;
+    border: #0c4395;
+    border-radius: 6px;
+    margin-top: 90px;
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .Hero {
+    max-width: 768px;
+    height: 460px;
+  }
+
+  .Hero h1 {
+    font-size: 74px;
+    padding-top: 70px;
+  }
+
+  .Hero button {
+    padding: 15px 40px;
+    border: #0c4395;
+    border-radius: 6px;
+    margin-top: 60px;
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Hero {
+    max-width: 480px;
+    height: 250px;
+  }
+
+  .Hero h1 {
+    font-size: 36px;
+    padding-top: 50px;
+  }
+
+  .Hero button {
+    padding: 12px 40px;
+    border: #0c4395;
+    border-radius: 6px;
+    margin-top: 50px;
+    font-size: 17px;
+  }
+}

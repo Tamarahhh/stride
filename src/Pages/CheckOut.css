@@ -1,0 +1,173 @@
+.CheckoutPage {
+  padding: 50px 280px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.CheckoutPage h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+  left: -100px;
+}
+
+.CheckoutPage .label {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.email-input,
+.firstname,
+.lastname {
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.phonenumber {
+  border-radius: 15px;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.address {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.location {
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.paymentButton {
+  background: #0c4395;
+  color: #fff;
+  padding: 15px 90px;
+  border-radius: 12px;
+  font-weight: 500;
+  border: none;
+  margin: 30px 0;
+  transition: 0.3s ease-in-out;
+}
+
+.paymentButton:hover {
+  background: #fff;
+  color: #002482;
+  border: 1px solid #0c4395;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .CheckoutPage {
+    padding: 40px 120px;
+  }
+
+  .CheckoutPage h2 {
+    font-size: 48px;
+    position: relative;
+    left: -50px;
+  }
+
+  .CheckoutPage .label {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .email-input,
+  .firstname,
+  .lastname,
+  .phonenumber,
+  .address {
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: #d9d9d9;
+  }
+
+  .location {
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .paymentButton {
+    padding: 18px 80px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .CheckoutPage {
+    padding: 30px 20px;
+  }
+
+  .CheckoutPage h2 {
+    font-size: 48px;
+    position: relative;
+    left: -0px;
+  }
+
+  .CheckoutPage .label {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .email-input,
+  .firstname,
+  .lastname,
+  .phonenumber,
+  .address {
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: #d9d9d9;
+  }
+
+  .location {
+    padding: 13px;
+    border-radius: 20px;
+  }
+
+  .paymentButton {
+    padding: 15px 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CheckoutPage {
+    padding: 30px 50px;
+  }
+
+  .CheckoutPage h2 {
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    left: -80px;
+  }
+
+  .CheckoutPage .label {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .email-input,
+  .firstname,
+  .lastname,
+  .phonenumber,
+  .address {
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: #d9d9d9;
+  }
+
+  .location {
+    padding: 13px;
+    border-radius: 20px;
+  }
+
+  .paymentButton {
+    padding: 15px 30px;
+  }
+}

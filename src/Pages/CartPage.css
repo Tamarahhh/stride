@@ -1,0 +1,421 @@
+.CartPage {
+  padding: 50px 80px;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.CartPage h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.CartPage img {
+  width: 240px;
+  height: 240px;
+}
+
+.CartPage .cartItems {
+  display: flex;
+  position: relative;
+  text-align: left;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+}
+
+.product-details {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.product-details h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.product-details .price {
+  color: #002482;
+  padding-left: 580px;
+}
+
+.brand-logo {
+  font-family: "Federant", serif;
+  font-size: 24px;
+  color: #00258238;
+  position: relative;
+  top: 30px;
+}
+
+.cart-count-buttons {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  top: -20px;
+  left: 900px;
+}
+
+.product-quantity {
+  font-weight: 800;
+  color: #2727274b;
+  font-size: 22px;
+  position: relative;
+  top: 8px;
+}
+.cartSummary {
+  text-align: left;
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 30px;
+  border-bottom: 2px solid #d9d9d9;
+  color: #272727;
+}
+
+.sum-total {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.sum-total .total-text {
+  font-size: 32px;
+  color: #272727;
+}
+
+.sum-total .total-price {
+  font-size: 60px;
+  font-weight: 500;
+  color: #272727;
+}
+
+.checkoutButton {
+  background: #0c4395;
+  color: #fff;
+  padding: 15px 90px;
+  border-radius: 12px;
+  font-weight: 500;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.checkoutButton:hover {
+  background: #fff;
+  color: #002482;
+  border: 1px solid #0c4395;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .CartPage {
+    padding: 20px 20px 60px 20px;
+  }
+
+  .CartPage h1 {
+    font-size: 45px;
+  }
+
+  .CartPage img {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .cartItem-container {
+    padding: 0;
+    margin: 10px;
+  }
+
+  .CartPage .cartItems {
+    max-width: 1024px;
+    height: 200px;
+  }
+
+  .product-details {
+    padding-left: 25px;
+    padding-top: 15px;
+  }
+
+  .product-details h2 {
+    font-size: 35px;
+  }
+  .product-details .price {
+    position: relative;
+    padding-left: 580px;
+    top: -40px;
+  }
+
+  .product-size,
+  .product-color,
+  .brand-logo {
+    position: relative;
+    font-size: 20px;
+  }
+
+  .product-color {
+    top: -34px;
+  }
+
+  .product-size {
+    top: -30px;
+  }
+
+  .brand-logo {
+    top: -38px;
+  }
+
+  .color-icon {
+    font-size: 20px;
+  }
+
+  .cart-count-buttons {
+    display: flex;
+    position: relative;
+    top: -90px;
+    left: 623px;
+    gap: 10px;
+  }
+
+  .cart-count-buttons .minus {
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .cart-count-buttons .plus {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .product-quantity {
+    font-size: 22px;
+    top: 5px;
+  }
+  .cartSummary {
+    font-size: 40px;
+  }
+
+  .sum-total .total-text {
+    font-size: 32px;
+  }
+
+  .sum-total .total-price {
+    font-size: 64px;
+  }
+
+  .checkoutButton {
+    padding: 20px 80px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .CartPage {
+    padding: 20px 20px 60px 20px;
+  }
+
+  .CartPage h1 {
+    font-size: 40px;
+  }
+
+  .CartPage img {
+    max-width: 160px;
+    height: 160px;
+  }
+
+  .cartItem-container {
+    padding: 0;
+    margin: 10px;
+  }
+
+  .CartPage .cartItems {
+    max-width: 768px;
+    height: 160px;
+  }
+
+  .product-details {
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
+  .product-details h2 {
+    font-size: 27px;
+  }
+  .product-details .price {
+    position: relative;
+    padding-left: 430px;
+    top: -35px;
+  }
+
+  .product-size,
+  .product-color,
+  .brand-logo {
+    position: relative;
+    font-size: 15px;
+  }
+
+  .product-color {
+    top: -30px;
+  }
+
+  .product-size {
+    top: -25px;
+  }
+
+  .brand-logo {
+    top: -38px;
+  }
+
+  .color-icon {
+    font-size: 6px;
+  }
+
+  .cart-count-buttons {
+    display: flex;
+    position: relative;
+    top: -74px;
+    left: 450px;
+    gap: 5px;
+  }
+
+  .cart-count-buttons .minus {
+    border-radius: 50px;
+    padding-left: 2px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .cart-count-buttons .plus {
+    border-radius: 50px;
+    padding-left: 2px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .product-quantity {
+    font-size: 12px;
+    top: 5px;
+  }
+  .cartSummary {
+    font-size: 28px;
+  }
+
+  .sum-total .total-text {
+    font-size: 24px;
+  }
+
+  .sum-total .total-price {
+    font-size: 44px;
+  }
+
+  .checkoutButton {
+    padding: 15px 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CartPage {
+    padding: 20px 20px;
+  }
+
+  .CartPage h1 {
+    font-size: 25px;
+  }
+
+  .CartPage img {
+    max-width: 70px;
+    height: 70px;
+  }
+
+  .cartItem-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .CartPage .cartItems {
+    max-width: 340px;
+    height: 70px;
+  }
+
+  .CartPage .two {
+    display: none;
+  }
+
+  .product-details {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .product-details h2 {
+    font-size: 10px;
+  }
+  .product-details .price {
+    position: relative;
+    padding-left: 150px;
+    top: -12px;
+  }
+
+  .product-size,
+  .product-color,
+  .brand-logo {
+    position: relative;
+    font-size: 7px;
+  }
+
+  .product-color {
+    top: -27px;
+  }
+
+  .product-size {
+    top: -15px;
+  }
+
+  .brand-logo {
+    top: -38px;
+  }
+
+  .color-icon {
+    font-size: 6px;
+  }
+
+  .cart-count-buttons {
+    display: flex;
+    position: relative;
+    top: -84px;
+    left: 119px;
+    gap: 2px;
+  }
+
+  .cart-count-buttons .minus {
+    border-radius: 70px;
+    padding-left: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .cart-count-buttons .plus {
+    border-radius: 70px;
+    padding-left: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .product-quantity {
+    font-size: 12px;
+    top: 5px;
+  }
+  .cartSummary {
+    font-size: 12px;
+  }
+
+  .sum-total .total-text {
+    font-size: 12px;
+  }
+
+  .sum-total .total-price {
+    font-size: 16px;
+  }
+
+  .checkoutButton {
+    padding: 15px 25px;
+  }
+}
