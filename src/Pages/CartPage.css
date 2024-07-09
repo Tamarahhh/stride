@@ -3,6 +3,8 @@
   font-family: "Montserrat", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
+  width: 100%;
+  height: auto;
 }
 
 .CartPage h1 {
@@ -12,7 +14,7 @@
 }
 
 .CartPage img {
-  width: 240px;
+  width: 350px;
   height: 240px;
 }
 
@@ -104,9 +106,9 @@
   border: 1px solid #0c4395;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .CartPage {
-    padding: 20px 20px 60px 20px;
+    padding: 20px;
   }
 
   .CartPage h1 {
@@ -124,7 +126,6 @@
   }
 
   .CartPage .cartItems {
-    max-width: 1024px;
     height: 200px;
   }
 
@@ -158,7 +159,7 @@
   }
 
   .brand-logo {
-    top: -38px;
+    top: -36px;
   }
 
   .color-icon {
@@ -168,28 +169,21 @@
   .cart-count-buttons {
     display: flex;
     position: relative;
-    top: -90px;
-    left: 623px;
-    gap: 10px;
+    top: -80px;
+    left: 630px;
+    gap: 5px;
   }
 
-  .cart-count-buttons .minus {
-    border-radius: 10px;
-    padding-left: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-  }
-
-  .cart-count-buttons .plus {
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+  .cart-count-buttons button {
+    border-radius: 4px;
+    position: relative;
+    top: -15px;
+    padding: 4px 13px;
   }
 
   .product-quantity {
-    font-size: 22px;
-    top: 5px;
+    font-size: 25px;
+    top: -15px;
   }
   .cartSummary {
     font-size: 40px;
@@ -204,11 +198,12 @@
   }
 
   .checkoutButton {
-    padding: 20px 80px;
+    padding: 20px 100px;
+    margin-left: 270px;
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .CartPage {
     padding: 20px 20px 60px 20px;
   }
@@ -273,27 +268,20 @@
     display: flex;
     position: relative;
     top: -74px;
-    left: 450px;
+    left: 465px;
     gap: 5px;
   }
 
-  .cart-count-buttons .minus {
-    border-radius: 50px;
-    padding-left: 2px;
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-
-  .cart-count-buttons .plus {
-    border-radius: 50px;
-    padding-left: 2px;
-    padding-bottom: 0;
-    padding-top: 0;
+  .cart-count-buttons button {
+    border-radius: 4px;
+    position: relative;
+    top: -2px;
+    padding: 4px 10px;
   }
 
   .product-quantity {
-    font-size: 12px;
-    top: 5px;
+    font-size: 20px;
+    top: -2px;
   }
   .cartSummary {
     font-size: 28px;
@@ -350,7 +338,7 @@
   }
   .product-details .price {
     position: relative;
-    padding-left: 150px;
+    padding-left: 210px;
     top: -12px;
   }
 
@@ -381,27 +369,20 @@
     display: flex;
     position: relative;
     top: -84px;
-    left: 119px;
-    gap: 2px;
+    left: 215px;
+    gap: 4px;
   }
 
-  .cart-count-buttons .minus {
-    border-radius: 70px;
-    padding-left: 5px;
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-
-  .cart-count-buttons .plus {
-    border-radius: 70px;
-    padding-left: 5px;
-    padding-bottom: 0;
-    padding-top: 0;
+  .cart-count-buttons button {
+    border-radius: 4px;
+    position: relative;
+    top: 8px;
+    padding: 2px 4px;
   }
 
   .product-quantity {
     font-size: 12px;
-    top: 5px;
+    top: 8px;
   }
   .cartSummary {
     font-size: 12px;
@@ -417,5 +398,6 @@
 
   .checkoutButton {
     padding: 15px 25px;
+    margin-left: 60px;
   }
 }

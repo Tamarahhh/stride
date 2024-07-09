@@ -1,4 +1,6 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import facebook from "../Images/facebook.png";
 import instagram from "../Images/instagram.png";
 import whatsapp from "../Images/whatsapp.png";
@@ -7,7 +9,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="Footer">
+    <div className="Footer container">
       <div className="newsletter">
         <div className="logo">Stride</div>
         <div className="newsletter-text">

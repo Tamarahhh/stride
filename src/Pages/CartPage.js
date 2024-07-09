@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import product1 from "../Components/Images/product1.png";
 import product2 from "../Components/Images/product2.png";
 import product3 from "../Components/Images/product3.png";
@@ -10,7 +12,7 @@ import "../Pages/CartPage.css";
 
 export default function CartPage() {
   return (
-    <div className="CartPage">
+    <div className="CartPage container">
       <h1>Cart (4)</h1>
       <div className="cartItem-container">
         <div className="cartItems one">

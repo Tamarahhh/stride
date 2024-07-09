@@ -17,7 +17,6 @@ export default function Navbar() {
           {" "}
           <img src={cartIcon} alt="cart" className="cart" />
         </Link>
-        <div className="cartCount">0</div>
         <p className="cart-text">Cart</p>
       </div>
     </div>

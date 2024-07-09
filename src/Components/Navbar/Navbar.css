@@ -43,23 +43,9 @@
   height: 30px;
 }
 
-.cartCount {
-  width: 15px;
-  height: 15px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  left: -33px;
-  top: -15px;
-  border-radius: 15px;
-  font-size: 11px;
-  background: #f06200;
-  color: #fff;
-}
-
 .cart-text {
   position: relative;
-  left: -42px;
+  left: -10px;
   top: 5px;
   color: #272727;
   font-family: "Montserrat", sans-serif;
