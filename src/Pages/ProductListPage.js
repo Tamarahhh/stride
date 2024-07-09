@@ -18,7 +18,7 @@ export default function ProductList(props) {
 
   const handleAddToCart = () => {
     props.addToCart({ id, quantity });
-    alert("Item has been added to cart, proceed to Cart.");
+    alert("Item has been added to cart");
   };
 
   return (
