@@ -311,13 +311,17 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .CartPage {
-    padding: 15px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
   }
 
   .CartPage h1 {
-    font-size: 25px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .CartPage img {
@@ -397,6 +401,7 @@
   }
   .cartSummary {
     font-size: 12px;
+    margin-bottom: 20px;
   }
 
   .sum-total .total-text {
@@ -405,11 +410,15 @@
 
   .sum-total .total-price {
     font-size: 16px;
+    margin-right: 20px;
   }
 
   .checkoutButton {
     padding: 15px 25px;
-    margin-left: 60px;
     border-radius: 5px;
+    position: relative;
+    left: 80px;
+    margin-bottom: 100px;
+    margin-top: 50px;
   }
 }
