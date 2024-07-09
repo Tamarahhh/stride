@@ -3,8 +3,7 @@
   display: flex;
   justify-content: space-evenly;
   border-bottom: 3px solid #8f8f8f;
-  padding: 10px 0;
-  margin: 10px;
+  max-width: 100%;
 }
 
 .logo {
@@ -53,7 +52,7 @@
 
 @media (max-width: 1024px) {
   .Navbar {
-    padding: 10px 10px;
+    padding: 0;
   }
   .searchBar Input {
     width: 150px;

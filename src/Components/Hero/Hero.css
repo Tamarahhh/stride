@@ -1,8 +1,8 @@
 .Hero {
   background-image: url(../Images/herosec.png);
   background-size: cover;
-  width: 100%;
   height: 600px;
+  width: 100%;
   text-align: center;
 }
 
