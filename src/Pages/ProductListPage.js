@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Product.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEllipsisV } from "@fortawesome/free-solid-svg-icons";
 
 export default function ProductList(props) {
   const { id, image, title, price } = props.data;
@@ -26,12 +24,7 @@ export default function ProductList(props) {
       <div>
         <img src={image} alt={title} className="productImage" />
       </div>
-      <p className="productTitle">{title}</p>{" "}
-      <span>
-        <a href="/">
-          <FontAwesomeIcon icon={faEllipsisV} className="dot-icon" />
-        </a>
-      </span>
+      <p className="productTitle">{title}</p>
       <p className="productPrice">{price}</p>
       <div className="cartButtons">
         <button

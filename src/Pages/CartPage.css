@@ -1,10 +1,9 @@
 .CartPage {
-  padding: 50px 80px;
   font-family: "Montserrat", sans-serif;
-  display: grid;
-  grid-template-columns: 1fr;
   width: 100%;
   height: auto;
+  padding-top: 50px;
+  padding-bottom: 200px;
 }
 
 .CartPage h1 {
@@ -14,23 +13,27 @@
 }
 
 .CartPage img {
-  width: 350px;
+  width: 240px;
   height: 240px;
 }
-
-.CartPage .cartItems {
-  display: flex;
-  position: relative;
-  text-align: left;
-  border: 1px solid #d9d9d9;
-  margin-bottom: 20px;
-}
-
-.product-details {
-  padding-left: 30px;
+.cartItem-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
   padding-top: 20px;
 }
 
+.cartItems {
+  width: 100%;
+  height: 240px;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.product-details {
+  padding: 20px;
+}
 .product-details h2 {
   font-size: 40px;
   font-weight: 600;
@@ -38,7 +41,7 @@
 
 .product-details .price {
   color: #002482;
-  padding-left: 580px;
+  padding-left: 500px;
 }
 
 .brand-logo {
@@ -54,7 +57,7 @@
   gap: 20px;
   position: relative;
   top: -20px;
-  left: 900px;
+  left: 850px;
 }
 
 .product-quantity {
@@ -93,9 +96,11 @@
 .checkoutButton {
   background: #0c4395;
   color: #fff;
-  padding: 15px 90px;
-  border-radius: 12px;
+  padding: 20px 90px;
+  border-radius: 20px;
   font-weight: 500;
+  position: relative;
+  left: 425px;
   border: none;
   transition: 0.3s ease-in-out;
 }
@@ -106,9 +111,10 @@
   border: 1px solid #0c4395;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .CartPage {
-    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 150px;
   }
 
   .CartPage h1 {
@@ -116,12 +122,12 @@
   }
 
   .CartPage img {
-    max-width: 200px;
+    width: 250px;
     height: 200px;
   }
 
   .cartItem-container {
-    padding: 0;
+    padding-top: 20px;
     margin: 10px;
   }
 
@@ -198,14 +204,17 @@
   }
 
   .checkoutButton {
-    padding: 20px 100px;
-    margin-left: 270px;
+    position: relative;
+    left: 250px;
   }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .CartPage {
-    padding: 20px 20px 60px 20px;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 100px;
   }
 
   .CartPage h1 {
@@ -269,7 +278,7 @@
     position: relative;
     top: -74px;
     left: 465px;
-    gap: 5px;
+    gap: 10px;
   }
 
   .cart-count-buttons button {
@@ -297,12 +306,14 @@
 
   .checkoutButton {
     padding: 15px 60px;
+    position: relative;
+    left: 200px;
   }
 }
 
 @media (max-width: 480px) {
   .CartPage {
-    padding: 20px 20px;
+    padding: 15px;
   }
 
   .CartPage h1 {
@@ -319,8 +330,8 @@
     margin: 0;
   }
 
-  .CartPage .cartItems {
-    max-width: 340px;
+  .cartItems {
+    width: 100%;
     height: 70px;
   }
 
@@ -399,5 +410,6 @@
   .checkoutButton {
     padding: 15px 25px;
     margin-left: 60px;
+    border-radius: 5px;
   }
 }

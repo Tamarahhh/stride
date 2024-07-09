@@ -38,19 +38,22 @@
 }
 
 .location {
-  max-width: 300px;
+  max-width: 500px;
   padding: 10px;
   border-radius: 15px;
+  margin-bottom: 40px;
 }
 
 .paymentButton {
   background: #0c4395;
   color: #fff;
   padding: 15px 90px;
-  border-radius: 12px;
+  border-radius: 20px;
   font-weight: 500;
   border: none;
-  margin: 30px 0;
+  margin: 60px 0;
+  position: relative;
+  left: 280px;
   transition: 0.3s ease-in-out;
 }
 
@@ -131,6 +134,8 @@
 
   .paymentButton {
     padding: 15px 60px;
+    position: relative;
+    left: 200px;
   }
 }
 
@@ -143,7 +148,7 @@
     font-size: 25px;
     text-align: center;
     position: relative;
-    left: -80px;
+    left: -95px;
   }
 
   .CheckoutPage .label {
@@ -165,9 +170,14 @@
   .location {
     padding: 13px;
     border-radius: 20px;
+    margin-bottom: 0;
   }
 
   .paymentButton {
     padding: 15px 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 50px;
+    margin: 20px 0;
   }
 }

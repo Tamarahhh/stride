@@ -1,9 +1,19 @@
+.Shop {
+  padding: 0 15px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 .products {
-  width: 100%;
+  width: 1250;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 130px;
 }
 
 .product {
@@ -19,7 +29,7 @@
 
 .product img {
   height: 350px;
-  width: 350px;
+  width: 400px;
 }
 
 .productTitle {
@@ -29,10 +39,6 @@
   font-weight: 700;
   font-size: 30px;
   text-align: left;
-}
-
-.dot-icon {
-  display: none;
 }
 
 .productPrice {
@@ -116,27 +122,23 @@
 
   .product img {
     height: 190px;
-    width: 210px;
+    width: 220px;
     margin-left: -10px;
   }
   .productTitle {
     font-size: 23px;
     padding-bottom: 5px;
-    margin-left: -5px;
-  }
-
-  .dot-icon {
-    display: none;
+    margin-left: 10px;
   }
 
   .productPrice {
     font-size: 23px;
-    margin-left: -5px;
+    margin-left: 10px;
   }
 
   .cartButtons {
     gap: 5px;
-    margin-left: -5px;
+    margin-left: 10px;
   }
 
   .cartButtons span {

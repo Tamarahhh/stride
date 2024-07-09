@@ -66,12 +66,12 @@
 }
 
 .card-payment-form button {
-  padding: 10px;
+  padding: 20px;
   font-weight: 500;
   font-size: 16px;
   background: #0c4395;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
 }
@@ -271,5 +271,6 @@
 
   .card-payment-form button {
     padding: 10px;
+    margin-top: 50px;
   }
 }

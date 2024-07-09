@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import facebook from "../Images/facebook.png";
 import instagram from "../Images/instagram.png";
@@ -9,7 +8,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="Footer container">
+    <footer className="Footer">
       <div className="newsletter">
         <div className="logo">Stride</div>
         <div className="newsletter-text">
@@ -50,6 +49,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

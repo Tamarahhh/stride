@@ -11,7 +11,7 @@ import PaymentPage from "./Pages/PaymentPage";
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
       <Router>
         <Navbar />
         <Routes>
