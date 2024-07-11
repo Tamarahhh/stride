@@ -4,7 +4,7 @@
 }
 
 .CheckoutPage h2 {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: left;
@@ -14,32 +14,34 @@
 
 .CheckoutPage .label {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: left;
+  color: #5f6980;
 }
 
 .email-input,
 .firstname,
 .lastname {
-  padding: 10px;
-  border-radius: 15px;
+  padding: 14px;
+  border-radius: 30px;
   margin-bottom: 10px;
 }
 
 .phonenumber {
-  border-radius: 15px;
+  padding: 14px;
+  border-radius: 30px;
   max-width: 500px;
   margin-bottom: 10px;
 }
 
 .address {
-  padding: 10px;
+  padding: 14px;
   border-radius: 15px;
 }
 
 .location {
   max-width: 500px;
-  padding: 10px;
+  padding: 14px;
   border-radius: 15px;
   margin-bottom: 40px;
 }
@@ -47,13 +49,13 @@
 .paymentButton {
   background: #0c4395;
   color: #fff;
-  padding: 15px 90px;
+  padding: 10px 16px 10px 16px;
   border-radius: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 24px;
   border: none;
-  margin: 60px 0;
   position: relative;
-  left: 280px;
+  left: 422px;
   transition: 0.3s ease-in-out;
 }
 
@@ -71,7 +73,7 @@
   .CheckoutPage h2 {
     font-size: 48px;
     position: relative;
-    left: -50px;
+    left: 110px;
   }
 
   .CheckoutPage .label {
@@ -84,19 +86,20 @@
   .lastname,
   .phonenumber,
   .address {
-    padding: 15px;
+    padding: 14px;
     border-radius: 20px;
     margin-bottom: 10px;
     color: #d9d9d9;
   }
 
   .location {
-    padding: 15px;
+    padding: 14px;
     border-radius: 20px;
   }
 
   .paymentButton {
-    padding: 18px 80px;
+    padding: 10px 16px 10px 16px;
+    left: 213px;
   }
 }
 
@@ -106,49 +109,9 @@
   }
 
   .CheckoutPage h2 {
-    font-size: 48px;
+    font-size: 46px;
     position: relative;
     left: -0px;
-  }
-
-  .CheckoutPage .label {
-    font-size: 20px;
-    text-align: left;
-  }
-
-  .email-input,
-  .firstname,
-  .lastname,
-  .phonenumber,
-  .address {
-    padding: 15px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    color: #d9d9d9;
-  }
-
-  .location {
-    padding: 13px;
-    border-radius: 20px;
-  }
-
-  .paymentButton {
-    padding: 15px 60px;
-    position: relative;
-    left: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .CheckoutPage {
-    padding: 30px 50px;
-  }
-
-  .CheckoutPage h2 {
-    font-size: 25px;
-    text-align: center;
-    position: relative;
-    left: -95px;
   }
 
   .CheckoutPage .label {
@@ -161,23 +124,44 @@
   .lastname,
   .phonenumber,
   .address {
-    padding: 15px;
+    padding: 14px;
     border-radius: 20px;
     margin-bottom: 10px;
-    color: #d9d9d9;
   }
 
   .location {
-    padding: 13px;
+    padding: 14px;
     border-radius: 20px;
-    margin-bottom: 0;
   }
 
   .paymentButton {
-    padding: 15px 30px;
-    border-radius: 5px;
     position: relative;
-    left: 50px;
-    margin: 20px 0;
+    left: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CheckoutPage {
+    padding: 30px 50px;
+  }
+
+  .CheckoutPage h2 {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    left: -95px;
+  }
+
+  .CheckoutPage .label {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .paymentButton {
+    padding: 4px 8px 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    position: relative;
+    left: 109px;
   }
 }

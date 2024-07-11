@@ -1,35 +1,41 @@
 .Navbar {
   width: 100%;
-  height: 70px;
+  height: 132px;
   display: flex;
   justify-content: space-evenly;
   border-bottom: 3px solid #8f8f8f;
   box-sizing: border-box;
-  margin-top: 10px;
+  top: 46px;
+  padding: 24px;
+  gap: 134px;
+  overflow: hidden;
 }
 
 .logo {
   font-family: "Federant", serif;
-  font-size: 25px;
+  font-size: 64px;
+  font-weight: 400;
   color: #002482;
 }
 
-.Navbar input {
-  padding: 10px 85px;
-  border-radius: 25px;
+.SearchBar input {
+  width: 552px;
+  height: 84px;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 30px;
   background: #d9d9d9;
   border: #8f8f8f;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 200;
 }
 
 .search-icon {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   position: relative;
-  top: -2px;
-  left: 55px;
+  left: 41px;
 }
 
 .cartIcons {
@@ -40,85 +46,109 @@
 }
 
 .cart {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 
 .cart-text {
   position: relative;
-  left: -10px;
-  top: 5px;
   color: #272727;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .Navbar {
-    padding: 10px 10px;
-    height: auto;
+    height: 101px;
+    top: 10px;
+    left: 67px;
+    padding: 18px;
+    gap: 102px;
   }
-  .searchBar Input {
-    width: 150px;
+
+  .logo {
+    font-size: 48px;
+  }
+
+  .SearchBar Input {
+    width: 423px;
+    height: 49px;
+    border-radius: 23px;
+    font-size: 18px;
   }
   .search-icon {
     position: relative;
-    top: -2px;
-    left: 45px;
+    width: 24px;
+    height: 24px;
+    left: 31px;
   }
-  .Navbar input {
-    padding: 10px 85px;
+
+  .cart {
+    width: 24px;
+    height: 19px;
+  }
+
+  .cart-text {
+    font-size: 12px;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .Navbar {
-    padding: 10px 10px;
-    height: auto;
+    height: 70px;
+    top: 40px;
+    left: 67px;
+    padding: 12px;
+    gap: 102px;
   }
-  .searchBar Input {
-    width: 150px;
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .SearchBar Input {
+    width: 290px;
+    height: 30px;
+    border-radius: 18px;
+    font-size: 16px;
   }
   .search-icon {
     position: relative;
-    top: -2px;
-    left: 45px;
+    width: 20px;
+    height: 20px;
+    left: 21px;
   }
-  .Navbar input {
-    padding: 10px 85px;
+
+  .cart {
+    width: 20px;
+    height: 16px;
+  }
+
+  .cart-text {
+    font-size: 8px;
   }
 }
 
 @media (max-width: 480px) {
   .Navbar {
-    padding: 10px 10px;
-    margin-top: 0;
-    height: auto;
-  }
-  .searchBar Input {
-    width: 150px;
-  }
-  .search-icon {
-    position: relative;
-    top: 20px;
-    left: 100px;
-  }
-  .Navbar input {
-    display: none;
+    height: 38px;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .logo {
-    position: relative;
-    left: -40px;
-    top: 20px;
+    font-size: 36px;
   }
 
-  .cart-text {
+  .SearchBar Input {
+    display: none;
+  }
+  .search-icon {
     display: none;
   }
 
-  .cartIcons {
-    position: relative;
-    left: 70px;
-    top: 10px;
+  .cart {
+    width: 24px;
+    height: 24px;
   }
 }

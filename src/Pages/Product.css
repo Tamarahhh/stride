@@ -1,60 +1,56 @@
 .Shop {
-  padding: 0 15px;
   max-width: 100%;
   box-sizing: border-box;
 }
 
 .products {
-  width: 1250;
-  height: auto;
+  width: 1248px;
+  height: 2480px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
-  padding-top: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 130px;
+  margin: 0 auto;
+  top: 789px;
+  left: 96px;
+  gap: 36px;
 }
 
 .product {
-  width: 100%;
+  width: 400px;
+  height: 593px;
   padding: 30px;
   border-radius: 10px;
-  text-align: center;
-}
-
-.product:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 .product img {
-  height: 350px;
+  height: 356px;
   width: 400px;
+  object-fit: cover;
 }
 
 .productTitle {
-  margin: 15px 15px 0 15px;
+  padding: 10px;
   color: #4c8ef0;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 36px;
   text-align: left;
 }
 
 .productPrice {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 32px;
   color: #272727;
   text-align: left;
   margin-left: 15px;
 }
 
 .cartButtons {
+  padding: 10px;
   display: flex;
   justify-content: left;
   align-items: center;
-  margin-top: 10px;
   gap: 10px;
   font-weight: 600;
 }
@@ -67,31 +63,37 @@
 .minus {
   font-size: 18px;
   background: #d9d9d9;
-  padding: 5px 10px;
-  border: none;
+  height: 28px;
+  width: 36px;
+  padding: 14px 11px 14px 11px;
+  border: 2px;
   cursor: pointer;
-  margin-left: 15px;
 }
 
 .plus {
   font-size: 17px;
   background: #d9d9d9;
-  padding: 5px 10px;
-  border: none;
+  padding: 10px;
+  height: 31px;
+  width: 31px;
+  border: 2px;
   cursor: pointer;
-  margin-left: 5px;
+  gap: 10px;
 }
 
 .addToCartButton {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  width: 226px;
+  height: 49px;
   background: #0c4395;
   color: #fff;
-  padding: 15px 60px;
+  padding: 10px 16px 10px 16px;
   border: none;
   border-radius: 10px;
-  margin-left: 20px;
+  left: 147px;
+  top: 5px;
   transition: 0.3s ease-in-out;
 }
 
@@ -106,44 +108,41 @@
   background: #f0f0f0;
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
-
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .products {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    position: relative;
+    top: -10px;
+    left: -50px;
+    gap: 5px;
+    padding: 100px;
   }
 
   .product {
-    max-width: 512px;
-    position: relative;
-    left: -10px;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .product img {
-    height: 190px;
-    width: 220px;
-    margin-left: -10px;
+    height: 350px;
+    width: 398px;
   }
   .productTitle {
-    font-size: 23px;
-    padding-bottom: 5px;
-    margin-left: 10px;
+    font-size: 36px;
   }
 
   .productPrice {
-    font-size: 23px;
-    margin-left: 10px;
+    font-size: 32px;
   }
 
   .cartButtons {
-    gap: 5px;
-    margin-left: 10px;
+    gap: 10px;
   }
 
   .cartButtons span {
-    font-size: 18px;
-    margin-left: 1px;
+    font-size: 32px;
   }
 
   .minus {
@@ -162,142 +161,119 @@
 
   .addToCartButton {
     font-size: 12px;
-    border-radius: 2px;
-    background: #0c4395;
-    color: #fff;
-    padding: 5px 25px;
-    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    left: 146px;
   }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .products {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    top: -180px;
+    left: -250px;
+    gap: 0;
+    padding: 30px;
   }
 
   .product {
-    max-width: 383px;
-    position: relative;
+    max-width: 100%;
+  }
+
+  .product img {
+    height: 250px;
+    width: 280px;
+  }
+  .productTitle {
+    font-size: 24px;
+  }
+
+  .productPrice {
+    font-size: 24px;
+  }
+
+  .cartButtons {
+    gap: 5px;
+  }
+
+  .cartButtons span {
+    font-size: 20px;
+  }
+
+  .minus {
+    font-size: 14px;
+    background: #9a9a9a;
+    padding: 3px 7px;
+    margin-left: 0;
+  }
+
+  .plus {
+    font-size: 13px;
+    background: #d9d9d9;
+    padding: 3px 7px;
+    margin-left: 0;
+  }
+
+  .addToCartButton {
+    font-size: 8px;
+    border-radius: 10px;
+    padding: 4px 0;
     left: 10px;
   }
-
-  .product img {
-    height: 150px;
-    width: 200px;
-    margin-left: -15px;
-  }
-
-  .productTitle {
-    font-size: 16px;
-    padding-bottom: 0;
-    margin-left: -5px;
-  }
-
-  .dot-icon {
-    display: none;
-  }
-
-  .productPrice {
-    font-size: 16px;
-    margin-left: -5px;
-  }
-
-  .cartButtons {
-    gap: 4px;
-    margin-left: -5px;
-  }
-
-  .cartButtons span {
-    font-size: 14px;
-    margin-left: 1px;
-  }
-
-  .minus {
-    font-size: 10px;
-    background: #9a9a9a;
-    padding: 3px 7px;
-    margin-left: -1px;
-  }
-
-  .plus {
-    font-size: 9px;
-    background: #d9d9d9;
-    padding: 3px 7px;
-    margin-left: 1px;
-  }
-
-  .addToCartButton {
-    font-size: 9px;
-    border-radius: 2px;
-    background: #0c4395;
-    color: #fff;
-    padding: 5px 30px;
-    margin-left: 10px;
-  }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .products {
+    width: 100%;
+    height: 100%;
     grid-template-columns: 1fr 1fr;
+    padding-left: 90px;
+    padding-top: 30px;
   }
-
   .product {
-    max-width: 155px;
+    width: 164px;
+    padding: 0;
     position: relative;
-    left: -20px;
+    left: -60px;
   }
 
   .product img {
-    height: 140px;
-    width: 150px;
-    margin-left: -25px;
+    height: 125px;
+    width: 164px;
   }
-
   .productTitle {
     font-size: 12px;
-    padding-bottom: 0;
-    margin-left: -20px;
-  }
-
-  .dot-icon {
-    display: none;
   }
 
   .productPrice {
     font-size: 12px;
-    margin-left: -20px;
   }
 
   .cartButtons {
-    gap: 2px;
-    margin-left: -18px;
+    gap: 5px;
   }
 
   .cartButtons span {
     font-size: 10px;
-    margin-left: 1px;
   }
 
   .minus {
-    font-size: 8px;
     background: #9a9a9a;
     padding: 3px 7px;
-    margin-left: -1px;
+    margin-left: 0;
   }
 
   .plus {
-    font-size: 7px;
     background: #d9d9d9;
     padding: 3px 7px;
-    margin-left: 1px;
+    margin-left: 0;
   }
 
   .addToCartButton {
-    font-size: 7px;
-    border-radius: 2px;
-    background: #0c4395;
-    color: #fff;
-    padding: 5px 9px;
-    margin-left: 3px;
+    font-size: 8px;
+    border-radius: 10px;
+    padding: 4px;
+    left: 53px;
   }
 }
