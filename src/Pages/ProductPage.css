@@ -1,0 +1,262 @@
+.Productview {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  margin: 30px;
+}
+
+.product-image {
+  height: 650px;
+  width: 650px;
+}
+
+.display-name {
+  color: #4c8ef0;
+  font-weight: 900;
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: 900;
+  color: #002482;
+}
+
+.brand-name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #272727;
+  opacity: 60%;
+}
+.ratings {
+  padding: 10px;
+  color: #272727;
+}
+
+.ratings span {
+  gap: 10px;
+  font-size: 18px;
+  opacity: 60%;
+}
+
+.ratings img {
+  height: 50px;
+  width: 50px;
+}
+
+h3 .discount {
+  font-size: 29px;
+  font-weight: 900;
+  color: #f06200;
+  position: relative;
+  left: 80px;
+}
+
+.size-chart-text {
+  font-size: 28px;
+  font-weight: 900;
+  color: #4c8ef0;
+}
+
+.size-chart-text img {
+  color: #00398f;
+}
+
+.size-chart button {
+  gap: 10px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.select-color p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #272727;
+  margin-top: 10px;
+}
+
+.select-color img {
+  height: 56px;
+  width: 56px;
+  border-radius: 4px;
+}
+
+.select-color button {
+  border: none;
+  gap: 5px;
+}
+
+.selected {
+  background: #4c8ef0;
+}
+
+.add-to-cart {
+  padding: 10px 16px 10px 16px;
+  background: #0c4395;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+  margin-top: 30px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product-image {
+    height: 450px;
+    width: 450px;
+  }
+
+  .display-name {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  .price {
+    font-size: 24px;
+  }
+
+  .brand-name {
+    font-size: 24px;
+  }
+
+  h3 .discount {
+    font-size: 22px;
+  }
+
+  .size-chart-text {
+    font-size: 22px;
+  }
+
+  .size-chart button {
+    font-size: 15px;
+  }
+
+  .select-color p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #272727;
+    margin-top: 10px;
+  }
+
+  .select-color img {
+    height: 36px;
+    width: 36px;
+    border-radius: 4px;
+  }
+
+  .add-to-cart {
+    padding: 2% 15%;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .product-image {
+    height: 400px;
+    width: 350px;
+  }
+
+  .display-name {
+    font-size: 25px;
+    margin-top: 0;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  h3 .discount {
+    font-size: 16px;
+  }
+
+  .size-chart-text {
+    font-size: 14px;
+  }
+
+  .size-chart button {
+    font-size: 8px;
+  }
+
+  .select-color p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .select-color img {
+    height: 22px;
+    width: 22px;
+  }
+
+  .add-to-cart {
+    padding: 2% 15%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Productview {
+    padding: 30px;
+    margin: 0;
+  }
+
+  .product-image {
+    height: 400px;
+    width: 350px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .description {
+    position: relative;
+    left: 20px;
+  }
+
+  .display-name {
+    font-size: 25px;
+    margin-top: 0;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  h3 .discount {
+    font-size: 16px;
+  }
+
+  .size-chart-text {
+    font-size: 14px;
+  }
+
+  .size-chart button {
+    font-size: 8px;
+  }
+
+  .select-color p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .select-color img {
+    height: 22px;
+    width: 22px;
+  }
+
+  .add-to-cart {
+    padding: 2% 15%;
+    font-size: 16px;
+  }
+}

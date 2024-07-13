@@ -8,19 +8,24 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Shop from "./Pages/Shop";
 import PaymentPage from "./Pages/PaymentPage";
+import ProductView from "./Pages/ProductPage";
+import { ShopProvider } from "./Context/ShopContext";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Shop />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/checkout" element={<CheckoutPage />} />
-          <Route path="/payment" element={<PaymentPage />} />
-        </Routes>
-        <Footer />
+        <ShopProvider>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Shop />} />
+            <Route path="/product/:id" element={<ProductView />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
+            <Route path="/payment" element={<PaymentPage />} />
+          </Routes>
+          <Footer />
+        </ShopProvider>
       </Router>
     </div>
   );

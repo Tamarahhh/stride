@@ -4,19 +4,17 @@
 }
 
 .products {
-  width: 1248px;
-  height: 2480px;
+  width: 100%;
+  max-width: 2500px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
-  top: 789px;
-  left: 96px;
   gap: 36px;
 }
 
 .product {
   width: 400px;
-  height: 593px;
+  max-width: 593px;
   padding: 30px;
   border-radius: 10px;
   text-align: left;
@@ -56,8 +54,7 @@
 }
 
 .cartButtons span {
-  font-size: 20px;
-  margin-left: 5px;
+  font-size: 32px;
 }
 
 .minus {
@@ -65,7 +62,7 @@
   background: #d9d9d9;
   height: 28px;
   width: 36px;
-  padding: 14px 11px 14px 11px;
+  padding-bottom: 3%;
   border: 2px;
   cursor: pointer;
 }
@@ -73,7 +70,7 @@
 .plus {
   font-size: 17px;
   background: #d9d9d9;
-  padding: 10px;
+  padding-bottom: 5%;
   height: 31px;
   width: 31px;
   border: 2px;
@@ -108,20 +105,25 @@
   background: #f0f0f0;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 35px;
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .products {
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
-    top: -10px;
-    left: -50px;
+    left: 60px;
+    padding-top: 50px;
     gap: 5px;
-    padding: 100px;
   }
 
   .product {
     max-width: 100%;
-    padding: 0;
+    padding: 20px;
     margin: 0;
   }
 
@@ -169,12 +171,12 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   .products {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
 
     top: -180px;
     left: -250px;
     gap: 0;
-    padding: 30px;
+    padding: 10px;
   }
 
   .product {

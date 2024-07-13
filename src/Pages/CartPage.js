@@ -1,122 +1,85 @@
-import React from "react";
+// CartPage.js
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../Context/ShopContext";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import product1 from "../Components/Images/product1.png";
-import product2 from "../Components/Images/product2.png";
-import product3 from "../Components/Images/product3.png";
-import product4 from "../Components/Images/product4.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import "../Pages/CartPage.css";
 
 export default function CartPage() {
+  const { cartItems, removeFromCart, incrementQuantity, decrementQuantity } =
+    useContext(ShopContext);
+
+  const handleDecrement = (itemId) => {
+    const item = cartItems.find((item) => item.id === itemId);
+    if (item.quantity === 1) {
+      removeFromCart(itemId);
+    } else {
+      decrementQuantity(itemId);
+    }
+  };
+
+  const handleIncrement = (itemId) => {
+    incrementQuantity(itemId);
+  };
+
   return (
     <div className="CartPage container">
-      <h1>Cart (4)</h1>
+      <h1>Cart ({cartItems.length})</h1>
       <div className="cartItem-container">
-        <div className="cartItems one">
-          <img src={product1} alt="Nike Airforce" />
-          <div className="product-details">
-            <h2 className="product-name">
-              Nike Airforce 1 <span className="price">N42,000</span>
-            </h2>
-            <p className="product-size">Size: XL</p>
-            <p className="product-color">
-              Colour:{" "}
-              <FontAwesomeIcon
-                icon={faCircle}
-                style={{ color: "#f65161" }}
-                className="color-icon"
-              />
-            </p>
-            <div>
-              <p className="brand-logo">Stride </p>
-              <span className="cart-count-buttons">
-                <button className="minus">-</button>
-                <span className="product-quantity">2</span>
-                <button className="plus">+</button>
-              </span>
+        {cartItems.map((item) => (
+          <div key={item.id} className="cartItems">
+            <img src={item.photo} alt={item.name} />
+            <div className="product-details">
+              <h2 className="product-name">
+                {item.name} <span className="price">N{item.price}</span>
+              </h2>
+              <p className="product-size">Size: {item.size.toUpperCase()}</p>
+              <p className="product-color">
+                Colour:{" "}
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  style={{ color: item.color }}
+                  className="color-icon"
+                />
+              </p>
+              <p className="brand-logo">Stride</p>
+              <div>
+                <span className="cart-count-buttons">
+                  <button
+                    className="minus"
+                    onClick={() => handleDecrement(item.id)}
+                  >
+                    -
+                  </button>
+                  <span className="product-quantity">{item.quantity}</span>
+                  <button
+                    className="plus"
+                    onClick={() => handleIncrement(item.id)}
+                  >
+                    +
+                  </button>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="cartItems one">
-          <img src={product2} alt="Nike Airforce" />
-          <div className="product-details">
-            <h2 className="product-name">
-              Nike Airforce 1 <span className="price">N42,000</span>
-            </h2>
-            <p className="product-size">Size: XL</p>
-            <p className="product-color">
-              Colour:{" "}
-              <FontAwesomeIcon
-                icon={faCircle}
-                style={{ color: "#f65161" }}
-                className="color-icon"
-              />
-            </p>
-            <div>
-              <p className="brand-logo">Stride </p>
-              <span className="cart-count-buttons">
-                <button className="minus">-</button>
-                <span className="product-quantity">2</span>
-                <button className="plus">+</button>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="cartItems two">
-          <img src={product3} alt="Nike Airforce" />
-          <div className="product-details">
-            <h2 className="product-name">
-              Nike Airforce 1 <span className="price">N42,000</span>
-            </h2>
-            <p className="product-size">Size: XL</p>
-            <p className="product-color">
-              Colour:{" "}
-              <FontAwesomeIcon icon={faCircle} style={{ color: "#f65161" }} />
-            </p>
-            <div>
-              <p className="brand-logo">Stride </p>
-              <span className="cart-count-buttons">
-                <button className="minus">-</button>
-                <span className="product-quantity">2</span>
-                <button className="plus">+</button>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="cartItems two">
-          <img src={product4} alt="Nike Airforce" />
-          <div className="product-details">
-            <h2 className="product-name">
-              Nike Airforce 1 <span className="price">N42,000</span>
-            </h2>
-            <p className="product-size">Size: XL</p>
-            <p className="product-color">
-              Colour:{" "}
-              <FontAwesomeIcon icon={faCircle} style={{ color: "#f65161" }} />
-            </p>
-            <div>
-              <p className="brand-logo">Stride </p>
-              <span className="cart-count-buttons">
-                <button className="minus">-</button>
-                <span className="product-quantity">2</span>
-                <button className="plus">+</button>
-              </span>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
       <div>
         <p className="cartSummary">CART SUMMARY</p>
         <div className="sum-total">
           <p className="total-text">SUM:</p>
-          <p className="total-price">N168,000</p>
+          <p className="total-price">
+            N
+            {cartItems.reduce(
+              (total, item) => total + item.price * item.quantity,
+              0
+            )}
+          </p>
         </div>
       </div>
       <Link to="/checkout">
-        {" "}
         <button className="checkoutButton">Proceed to Checkout</button>
       </Link>
     </div>
