@@ -10,6 +10,7 @@ import blue from "../Components/Images/blue.png";
 import "./ProductPage.css";
 import { ShopContext } from "../Context/ShopContext";
 
+const API_URL = "https://timbu-get-single-product.reavdev.workers.dev/";
 const ORGANIZATION_ID = "a09c032504604feea8b83d8c4f88d462";
 const APP_ID = "S5AD9TP5NIX3VPT";
 const API_KEY = "ab88e71eabfa4722a43f50110939644220240712191917113630";
@@ -26,7 +27,7 @@ export default function ProductView() {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `/api/products/${id}?organization_id=${ORGANIZATION_ID}&Appid=${APP_ID}&Apikey=${API_KEY}`
+          `${API_URL}/products/${id}?organization_id=${ORGANIZATION_ID}&Appid=${APP_ID}&Apikey=${API_KEY}`
         );
         console.log(response.data);
         setProduct(response.data);
