@@ -1,5 +1,4 @@
-import React, { useState, useContext } from "react";
-import { ShopContext } from "../Context/ShopContext";
+import React, { useState } from "react";
 import "./Product.css";
 import { Link } from "react-router-dom";
 
@@ -7,7 +6,6 @@ const baseUrl = "https://api.timbu.cloud/images/";
 
 export default function ProductList(props) {
   const { data } = props;
-  const { addToCart } = useContext(ShopContext);
 
   const [quantity, setQuantity] = useState(0);
 
@@ -23,16 +21,6 @@ export default function ProductList(props) {
 
   const handleIncrement = () => {
     setQuantity(quantity + 1);
-  };
-
-  const handleAddToCart = () => {
-    const price =
-      current_price && current_price.length > 0 && current_price[0].NGN
-        ? current_price[0].NGN[0]
-        : 0;
-    const image = photos && photos.length > 0 ? baseUrl + photos[0].url : "";
-    addToCart({ id, name, price, quantity, image });
-    setQuantity(0);
   };
 
   const photoUrl =
@@ -65,9 +53,7 @@ export default function ProductList(props) {
           +
         </button>
         <Link to={`/product/${id}`}>
-          <button className="addToCartButton" onClick={handleAddToCart}>
-            Add to Cart
-          </button>
+          <button className="addToCartButton">Add to Cart</button>
         </Link>
       </div>
     </div>

@@ -63,6 +63,7 @@ export default function ProductView() {
         color: selectedColor,
         photo: photoUrl,
       });
+      console.log("Adding product to cart:", product);
     }
   };
 
