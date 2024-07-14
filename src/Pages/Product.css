@@ -5,7 +5,7 @@
 
 .products {
   width: 100%;
-  max-width: 2500px;
+  max-height: 2500px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
@@ -14,7 +14,7 @@
 
 .product {
   width: 400px;
-  max-width: 593px;
+  max-height: 593px;
   padding: 30px;
   border-radius: 10px;
   text-align: left;

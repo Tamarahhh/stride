@@ -21,7 +21,7 @@ export default function Shop() {
   const fetchProducts = async (page) => {
     try {
       const response = await axios.get(
-        `${API_URL}?organization_id=${ORGANIZATION_ID}&Appid=${APP_ID}&Apikey=${API_KEY}&page=${page}&size=10`
+        `${API_URL}?organization_id=${ORGANIZATION_ID}&Appid=${APP_ID}&Apikey=${API_KEY}&page=${page}&size=12`
       );
       const { items, total, size } = response.data;
       setProducts(items);

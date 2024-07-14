@@ -7,6 +7,7 @@
   box-sizing: border-box;
   top: 46px;
   padding: 24px;
+  margin-top: 20px;
   gap: 134px;
   overflow: hidden;
 }
@@ -20,9 +21,8 @@
 
 .SearchBar input {
   width: 552px;
-  height: 84px;
-  gap: 10px;
-  padding: 10px 8%;
+  height: 64px;
+  padding: 10px 10%;
   border-radius: 30px;
   background: #d9d9d9;
   border: #8f8f8f;
@@ -35,14 +35,17 @@
   width: 32px;
   height: 32px;
   position: relative;
-  left: 41px;
+  left: 45px;
 }
 
 .cartIcons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  font-weight: 600;
+  gap: 14px;
+  position: relative;
+  top: -8px;
 }
 
 .cart {
@@ -52,6 +55,7 @@
 
 .cart-text {
   position: relative;
+  top: 6px;
   color: #272727;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -139,6 +143,8 @@
 
   .logo {
     font-size: 36px;
+    position: relative;
+    top: -20px;
   }
 
   .SearchBar Input {
