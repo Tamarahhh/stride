@@ -46,7 +46,7 @@ export default function ProductList(props) {
       : "No Price";
 
   return (
-    <div className="product col-lg-4 col-md-6 col-sm-12">
+    <div className="product">
       <div>
         <img src={photoUrl} alt={name} className="productImage" />
       </div>

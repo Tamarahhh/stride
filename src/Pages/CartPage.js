@@ -35,7 +35,7 @@ export default function CartPage() {
               <h2 className="product-name">
                 {item.name} <span className="price">N{item.price}</span>
               </h2>
-              <p className="product-size">Size: {item.size.toUpperCase()}</p>
+              <p className="product-size">Size: {item.size}</p>
               <p className="product-color">
                 Colour:{" "}
                 <FontAwesomeIcon
