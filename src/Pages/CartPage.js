@@ -13,9 +13,9 @@ export default function CartPage() {
 
   const handleDecrement = (itemId) => {
     const item = cartItems.find((item) => item.id === itemId);
-    if (item.quantity === 1) {
+    if (item.quantity < 1) {
       removeFromCart(itemId);
-    } else {
+    } else if (item.quantity >= 1) {
       decrementQuantity(itemId);
     }
   };
