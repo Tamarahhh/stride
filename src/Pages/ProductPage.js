@@ -118,19 +118,21 @@ export default function ProductView() {
           <h3 className="price">
             N{price} <span className="discount">(30% Off)</span>
           </h3>
-          <h4 className="size-chart-text">
-            Size Chart <img src={right} alt="Size Chart" />
-          </h4>
-          <div className="size-chart">
-            {parsedDescription.size.map((size) => (
-              <button
-                key={size}
-                onClick={() => handleSizeClick(size)}
-                className={selectedSize === size ? "selected" : ""}
-              >
-                {size.toUpperCase()}
-              </button>
-            ))}
+          <div className="size-chart-box">
+            <h4 className="size-chart-text">
+              Size Chart <img src={right} alt="Size Chart" />
+            </h4>
+            <div className="size-chart">
+              {parsedDescription.size.map((size) => (
+                <button
+                  key={size}
+                  onClick={() => handleSizeClick(size)}
+                  className={selectedSize === size ? "selected" : ""}
+                >
+                  {size.toUpperCase()}
+                </button>
+              ))}
+            </div>
           </div>
           <div className="select-color">
             <p>Select Color</p>

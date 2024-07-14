@@ -16,6 +16,7 @@ export default function CheckoutPage() {
             type="email"
             placeholder="Enter email"
             className="email-input"
+            required
           />
         </Form.Group>
         <Form.Group as={Col} controlId="formGridFirstname">
