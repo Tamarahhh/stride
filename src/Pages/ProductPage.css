@@ -96,6 +96,8 @@ h3 .discount {
 }
 
 .add-to-cart {
+  width: 445px;
+  height: 82px;
   padding: 10px 16px 10px 16px;
   background: #0c4395;
   color: #fff;
@@ -151,6 +153,9 @@ h3 .discount {
   }
 
   .add-to-cart {
+    border-radius: 5px;
+    width: 250px;
+    height: 52px;
     padding: 2% 15%;
     font-size: 18px;
   }
@@ -198,6 +203,9 @@ h3 .discount {
   }
 
   .add-to-cart {
+    border-radius: 5px;
+    width: 200px;
+    height: 52px;
     padding: 2% 15%;
     font-size: 16px;
   }
@@ -261,7 +269,7 @@ h3 .discount {
 
   .size-chart-box {
     position: relative;
-    left: 250px;
+    left: 220px;
     top: 23px;
   }
 
@@ -274,7 +282,7 @@ h3 .discount {
   }
 
   .size-chart button {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .select-color p {

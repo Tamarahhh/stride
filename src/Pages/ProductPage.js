@@ -26,7 +26,7 @@ export default function ProductView() {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `https://api.timbu.cloud/products/${id}?organization_id=${ORGANIZATION_ID}&Appid=${APP_ID}&Apikey=${API_KEY}`
+          `https://timbu-get-single-product.reavdev.workers.dev/${id}?organization_id=${ORGANIZATION_ID}&Appid=${APP_ID}&Apikey=${API_KEY}`
         );
         console.log(response.data);
         setProduct(response.data);
