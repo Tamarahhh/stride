@@ -4,6 +4,7 @@ import "./Product.css";
 import Hero from "../Components/Hero/Hero";
 import ProductList from "./ProductListPage";
 
+const API_URL = "https://timbu-get-all-products.reavdev.workers.dev/";
 const ORGANIZATION_ID = "a09c032504604feea8b83d8c4f88d462";
 const APP_ID = "S5AD9TP5NIX3VPT";
 const API_KEY = "ab88e71eabfa4722a43f50110939644220240712191917113630";
@@ -20,7 +21,7 @@ export default function Shop() {
   const fetchProducts = async (page) => {
     try {
       const response = await axios.get(
-        `/api/products?organization_id=${ORGANIZATION_ID}&reverse_sort=false&page=${page}&size=12&Appid=${APP_ID}&Apikey=${API_KEY}`
+        `${API_URL}products?organization_id=${ORGANIZATION_ID}&reverse_sort=false&page=${page}&size=12&Appid=${APP_ID}&Apikey=${API_KEY}`
       );
       const { items, total, size } = response.data;
       setProducts(items);
